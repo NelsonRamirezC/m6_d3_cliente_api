@@ -44,7 +44,7 @@
 			<form id="busquedaNivel">
 				<label class="form-label" for="nivel">Elegir nivel</label>
 				<select name="nivelDigimon" id="nivelDigimon" class="form-select">
-					<option>Elegir un nivel</option>
+					<option value="default">Elegir un nivel</option>
 					<option value="In Training">In Training</option>
 					<option value="Rookie">Rookie</option>
 					<option value="Champion">Champion</option>
@@ -68,10 +68,31 @@
 						</tr>
 					</thead>
 					<tbody>
-				
+
 					</tbody>
 				</table>
 			</section>
+		</section>
+		<hr>
+		<section>
+			<h2 class="text-center">Crea tu propio digimon.</h2>
+			<form id="formCrearDigimon">
+				<label for="createNombre" class="form-label">Nombre</label>
+				<input class="form-control" type="text" name="createNombre" id="createNombre" required>
+				<label for="createImagen" class="form-label">Imagen</label>
+				<input class="form-control" type="text" name="createImagen" id="createImagen" required>
+				<select name="createNivel" id="createNivel" class="form-select">
+					<option value="In Training">In Training</option>
+					<option value="Rookie">Rookie</option>
+					<option value="Champion">Champion</option>
+					<option value="Ultimate">Ultimate</option>
+					<option value="Fresh">Fresh</option>
+					<option value="Mega">Mega</option>
+					<option value="Training">Training</option>
+					<option value="Armor">Armor</option>
+				</select>
+				<button class="btn btn-primary" type="submit">Crear</button>
+			</form>
 		</section>
 	</main>
 
